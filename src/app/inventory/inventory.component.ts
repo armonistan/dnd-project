@@ -3,7 +3,7 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 
 @Component({
 	selector: 'inventory',
-	styleUrls: ['./inventory.component.css'],
+	styleUrls: ['./inventory.component.css', '../../style/app.css'],
 	templateUrl: './inventory.component.html'
 })
 

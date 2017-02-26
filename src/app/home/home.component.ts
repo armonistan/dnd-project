@@ -4,7 +4,7 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 
 @Component({
 	selector: 'home',
-	styleUrls: ['./home.component.css'],
+	styleUrls: ['./home.component.css', '../../style/app.css'],
 	templateUrl: './home.component.html'
 })
 

@@ -3,7 +3,7 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 
 @Component({
 	selector: 'characters',
-	styleUrls: ['./characters.component.css'],
+	styleUrls: ['./characters.component.css', '../../style/app.css'],
 	templateUrl: './characters.component.html'
 })
 

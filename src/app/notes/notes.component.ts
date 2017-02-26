@@ -3,7 +3,7 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 
 @Component({
 	selector: 'notes',
-	styleUrls: ['./notes.component.css'],
+	styleUrls: ['./notes.component.css', '../../style/app.css'],
 	templateUrl: './notes.component.html'
 })
 
