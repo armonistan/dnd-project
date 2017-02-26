@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
-import {Config} from './config.service';
+//import {Config} from './config.service';
 
 @Component({
 	selector: 'home',
@@ -9,16 +9,88 @@ import {Config} from './config.service';
 })
 
 export class HomeComponent {
-	message: string = "Hello World!";
+	skills: Array<Object> = [
+		{
+			description: "Athletics",
+			attribute: "Strength",
+			isProficent: false
+		},{
+			description: "Acrobatics",
+			attribute: "Dexterity",
+			isProficent: false
+		},{
+			description: "Sleight of Hand",
+			attribute: "Dexterity",
+			isProficent: false
+		},{
+			description: "Stealth",
+			attribute: "Dexterity",
+			isProficent: false
+		},{
+			description: "Arcana",
+			attribute: "Intelligence",
+			isProficent: false
+		},{
+			description: "History",
+			attribute: "Intelligence",
+			isProficent: false
+		},{
+			description: "Investigation",
+			attribute: "Intelligence",
+			isProficent: false
+		},{
+			description: "Nature",
+			attribute: "Intelligence",
+			isProficent: false
+		},{
+			description: "Religion",
+			attribute: "Intelligence",
+			isProficent: false
+		},{
+			description: "Animal Handling",
+			attribute: "Wisdom",
+			isProficent: false
+		},{
+			description: "Insight",
+			attribute: "Wisdom",
+			isProficent: false
+		},{
+			description: "Medicine",
+			attribute: "Wisdom",
+			isProficent: false
+		},{
+			description: "Perception",
+			attribute: "Wisdom",
+			isProficent: false
+		},{
+			description: "Survival",
+			attribute: "Wisdom",
+			isProficent: false
+		},{
+			description: "Deception",
+			attribute: "Charisma",
+			isProficent: false
+		},{
+			description: "Intimidation",
+			attribute: "Charisma",
+			isProficent: false
+		},{
+			description: "Performance",
+			attribute: "Charisma",
+			isProficent: false
+		},{
+			description: "Persuasion",
+			attribute: "Charisma",
+			isProficent: false
+		}
+	];
 	userLoginValue: string = "";
-	//configMessage: string = Config.LLAMA;
-	config = Config;
 	
 	constructor(private route: ActivatedRoute, private router: Router) {
 	}
 	
-	login(){
+	llama(){
 		console.log(this.userLoginValue);
-		this.router.navigate(["/about"]);
+		//this.router.navigate(["/about"]);
 	}
 }

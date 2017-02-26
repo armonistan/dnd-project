@@ -1,3 +1,7 @@
-.llama {
-	font-size: 2em;
+.row {
+	width: 100%;
+}
+
+.col-25 {
+	width: 25%;
 }

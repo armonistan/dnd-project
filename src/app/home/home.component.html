@@ -1,3 +1,20 @@
-<h3>Curse of Straud</h3>
-<input type="text" [(ngModel)]="userLoginValue" placeholder="Login Code"/>
-<button (click)="login()"> Login </button>
+<table class="row">
+	<tr>
+		<th>
+			<a [routerLink]="['/maps']"> Maps </a>
+		</th>
+		<th>
+			<a [routerLink]="['/characters']"> Characters </a>
+		</th>
+		<th>
+			<a [routerLink]="['/notes']"> Notes </a>
+		</th>
+		<th>
+			<a [routerLink]="['/inventory']"> Inventory </a>
+		</th>
+	</tr>
+</table>
+
+<div *ngFor="let skill of skills">
+	<input type="checkbox">{{skill.description}}
+</div>
