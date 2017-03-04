@@ -84,13 +84,34 @@ export class HomeComponent {
 			isProficent: false
 		}
 	];
-	userLoginValue: string = "";
+	stats: Array<Object> = [
+		{
+			description: "Strength",
+			value: 10,
+			modifier: 0
+		},{
+			description: "Dexterity",
+			value: 16,
+			modifier: 3
+		},{
+			description: "Constitution",
+			value: 11,
+			modifier: 0
+		},{
+			description: "Intelligence",
+			value: 12,
+			modifier: 1
+		},{
+			description: "Wisdom",
+			value: 14,
+			modifier: 2
+		},{
+			description: "Charisma",
+			value: 13,
+			modifier: 1
+		}
+	];
 	
 	constructor(private route: ActivatedRoute, private router: Router) {
-	}
-	
-	llama(){
-		console.log(this.userLoginValue);
-		//this.router.navigate(["/about"]);
 	}
 }
