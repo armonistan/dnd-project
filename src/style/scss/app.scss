@@ -1,0 +1,69 @@
+/////////////////////
+//app wide styling///
+/////////////////////
+
+.navigation-header {
+	height: 4em;
+	color: #fff !important;
+	background: #262626;
+}
+
+.row {
+	width: 100%;
+}
+
+.col-25 {
+	width: 25%;
+}
+
+.col-50 {
+	width: 50%;
+}
+
+/////////////////////
+//home styling///////
+/////////////////////
+
+
+.profile-portrait {
+	margin-top: .5em;
+	width: 5em;
+	height: 5em;
+	border-radius: 3em;
+	position: absolute;
+}
+
+.top-container {
+	width: calc(100% - 6em);
+	display: flex;
+	margin-left: 6em;
+	height: 6em;
+}
+
+.left-container {
+	position: absolute;
+	left: 0%;
+}
+
+.right-container {
+	position: absolute;
+	right: 0%;
+}
+
+.skill-container {
+	top: 6em;
+}
+
+.entry-container {
+	padding: 1.5em 1em 1em 1em;
+	
+	.underline {
+		margin-top: 0em !important;
+	}
+	.entry-name {
+		font-size: .825em;
+	}
+	.entry-value {
+		font-size: 1em;
+	}
+}

@@ -1,19 +1,1 @@
-.profile-portrait {
-	width: 5em;
-	height: 5em;
-	border-radius: 3em;
-}
 
-.left-container {
-	position: absolute;
-	left: 0%;
-}
-
-.right-container {
-	position: absolute;
-	right: 0%;
-}
-
-.skill-container {
-	top: 6em;
-}

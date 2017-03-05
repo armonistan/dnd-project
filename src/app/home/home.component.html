@@ -15,32 +15,36 @@
 	</tr>
 </table>
 
-<table class="row">
-	<tr>
-		<td>
-			<img class="profile-portrait" src="../../assets/rho painting.jpg">
-		</td>
-		<td>
-			<div> Name </div>
-			<div> Rhomani "Rho" Basillea </div>
-		</td>
-		<td>
-			<div> Race </div>
-			<div> Half-Drow </div>			
-		</td>
-		<td>
-			<div> Class </div>
-			<div> Rogue </div>
-		</td>
-		<td>
-			<div> Alignment </div>
-			<div> Chaotic Neutral </div>
-		</td>
-	</tr>	
-</table>
+<div class="row">
+	<div>
+		<img class="profile-portrait" src="../../assets/rho painting.jpg">
+	</div>
+	<div class="top-container">
+		<div class="col-25 entry-container">
+			<div class="entry-name"> Name </div>
+			<div class="entry-value"> Rhomani "Rho" Basillea </div>
+			<hr class="underline"/>
+		</div>
+		<div class="col-25 entry-container">
+			<div class="entry-name"> Race </div>
+			<div class="entry-value"> Half-Drow </div>
+			<hr class="underline"/>
+		</div>
+		<div class="col-25 entry-container">
+			<div class="entry-name"> Class </div>
+			<div class="entry-value"> Rogue </div>
+			<hr class="underline"/>
+		</div>
+		<div class="col-25 entry-container">
+			<div class="entry-name"> Alignment </div>
+			<div class="entry-value"> Chaotic Neutral </div>
+			<hr class="underline"/>
+		</div>	
+	</div>
+</div>
 
-<table class="row-50 left-container">
-	<table class="row-50 left-container">
+<table class="col-50 left-container">
+	<table class="col-50 left-container">
 		<tr *ngFor="let stat of stats">
 			<td>
 				{{stat.description}}
@@ -54,7 +58,7 @@
 		</tr>
 	</table>
 	
-	<div class="row-50 right-container">
+	<div class="col-50 right-container">
 		<div> Proficiency Bonus </div>
 		<div> +2 </div>
 		
@@ -62,14 +66,14 @@
 		<div> 1 </div>	
 	</div>
 
-	<div class="row-50 right-container skill-container">
+	<div class="col-50 right-container skill-container">
 		<div *ngFor="let skill of skills">
 			{{skill.description}}
 		</div>
 	</div>
 </table>
 
-<table class="row-50 right-container">
+<table class="col-50 right-container">
 	<table>
 		<div> Character Level </div>
 		<div> 2 </div>
