@@ -13,164 +13,171 @@
 	</div>
 </div>
 
-<div class="row">
-	<div>
-		<img class="profile-portrait" src="../../assets/rho painting.jpg">
+<div class="content-container">
+	<div class="row">
+		<div>
+			<img class="profile-portrait" src="../../assets/rho painting.jpg">
+		</div>
+		<div class="top-container">
+			<div class="col-25 entry-container">
+				<div class="entry-name"> Name </div>
+				<div class="entry-value"> Rhomani "Rho" Basillea </div>
+				<hr class="underline"/>
+			</div>
+			<div class="col-25 entry-container">
+				<div class="entry-name"> Race </div>
+				<div class="entry-value"> Half-Drow </div>
+				<hr class="underline"/>
+			</div>
+			<div class="col-25 entry-container">
+				<div class="entry-name"> Class </div>
+				<div class="entry-value">Level 2 Rogue </div> <!--Combine Class/Archetype with Level-->
+				<hr class="underline"/>
+			</div>
+			<div class="col-25 entry-container">
+				<div class="entry-name"> Alignment </div>
+				<div class="entry-value"> Chaotic Neutral </div>
+				<hr class="underline"/>
+			</div>	
+		</div>
 	</div>
-	<div class="top-container">
-		<div class="col-25 entry-container">
-			<div class="entry-name"> Name </div>
-			<div class="entry-value"> Rhomani "Rho" Basillea </div>
-			<hr class="underline"/>
-		</div>
-		<div class="col-25 entry-container">
-			<div class="entry-name"> Race </div>
-			<div class="entry-value"> Half-Drow </div>
-			<hr class="underline"/>
-		</div>
-		<div class="col-25 entry-container">
-			<div class="entry-name"> Class </div>
-			<div class="entry-value">Level 2 Rogue </div> <!--Combine Class/Archetype with Level-->
-			<hr class="underline"/>
-		</div>
-		<div class="col-25 entry-container">
-			<div class="entry-name"> Alignment </div>
-			<div class="entry-value"> Chaotic Neutral </div>
-			<hr class="underline"/>
-		</div>	
-	</div>
-</div>
-
-<div class="col-50 left-container">
 	<div class="col-50 left-container">
-		<div class="stat-container" *ngFor="let stat of stats">
-			<div>
-				{{stat.description}}
-			</div>
-			<div>
-				{{stat.value}}
-			</div>
-			<div>
-				{{stat.modifier}}
+		<div class="col-50 left-container">
+			<div class="stat-container" *ngFor="let stat of stats">
+				<div>
+					{{stat.description}}
+				</div>
+				<div>
+					{{stat.value}}
+				</div>
+				<div>
+					{{stat.modifier}}
+				</div>
 			</div>
 		</div>
-	</div>
-	
-	<div class="col-50 right-container">
-		<div> Proficiency Bonus </div>
-		<div> +2 </div>
 		
-		<div> Inspiration Points </div>
-		<div> 1 </div>	
-	</div>
-
-	<div class="col-50 right-container skill-container">
-		<div *ngFor="let skill of skills">
-			{{skill.description}}
+		<div class="col-50 right-container">
+			<div class="col-20 entry-container">
+				<div class="entry-name"> Proficiency Bonus </div>
+				<div class="entry-value"> +2 </div>
+				<hr class="underline"/>
+			</div>
+			<div class="col-20 entry-container">
+				<div class="entry-name"> Inspiration Points </div>
+				<div class="entry-value"> 1 </div>
+				<hr class="underline"/>
+			</div>
+		</div>
+	
+		<div class="col-50 right-container skill-container">
+			<div *ngFor="let skill of skills">
+				{{skill.description}}
+			</div>
 		</div>
 	</div>
-</div>
-
-<div class="col-50 right-container">
-	<div class="row">
-		<div class="col-20 entry-container">
-			<div class="entry-name"> HP </div>
-			<div class="entry-value"> 16/16 </div>
-			<hr class="underline"/>
+	<div class="col-50 right-container">
+		<div class="row">
+			<div class="col-20 entry-container">
+				<div class="entry-name"> HP </div>
+				<div class="entry-value"> 16/16 </div>
+				<hr class="underline"/>
+			</div>
+			<div class="col-20 entry-container">
+				<div class="entry-name"> Armor Class </div>
+				<div class="entry-value"> 14 </div>
+				<hr class="underline"/>
+			</div>
+			<div class="col-20 entry-container">
+				<div class="entry-name"> Initiative </div>
+				<div class="entry-value"> 12 </div>
+				<hr class="underline"/>
+			</div>	
+			<div class="col-20 entry-container">
+				<div class="entry-name"> Total Hit Dice </div>
+				<div class="entry-value"> 2d6 </div>
+				<hr class="underline"/>
+			</div>
+			<div class="col-20 entry-container">
+				<div class="entry-name"> Usable Hit Dice </div>
+				<div class="entry-value"> 1d6 </div>
+				<hr class="underline"/>
+			</div>
 		</div>
-		<div class="col-20 entry-container">
-			<div class="entry-name"> Armor Class </div>
-			<div class="entry-value"> 14 </div>
-			<hr class="underline"/>
+		<div class="row">
+			<div class="col-33 entry-container">
+				<div class="entry-name"> Spell Defence Check </div>
+				<div class="entry-value"> 14 </div>
+				<hr class="underline"/>
+			</div>
+			<div class="col-33 entry-container">
+				<div class="entry-name"> Spell Attack Bonus </div>
+				<div class="entry-value"> +4 </div>
+				<hr class="underline"/>
+			</div>
+			<div class="col-33 entry-container">
+				<div class="entry-name"> Spell Primary Attribute </div>
+				<div class="entry-value"> Intelligence </div>
+				<hr class="underline"/>
+			</div>
 		</div>
-		<div class="col-20 entry-container">
-			<div class="entry-name"> Initiative </div>
-			<div class="entry-value"> 12 </div>
-			<hr class="underline"/>
+		<div class="row">
+			<div class="col-20 entry-container">
+				<div class="entry-name"> Weapon </div>
+				<div class="entry-value"> Shortbow </div>
+				<hr class="underline"/>
+			</div>
+			<div class="col-20 entry-container">
+				<div class="entry-name"> Attack Range </div>
+				<div class="entry-value"> Up to 120ft/Up 360ft Disadvantage </div>
+				<hr class="underline"/>
+			</div>
+			<div class="col-20 entry-container">
+				<div class="entry-name"> Hit Bonus </div>
+				<div class="entry-value"> +5 </div>
+				<hr class="underline"/>
+			</div>
+			<div class="col-20 entry-container">
+				<div class="entry-name"> Attack Bonus </div>
+				<div class="entry-value"> +3 </div>
+				<hr class="underline"/>
+			</div>
+			<div class="col-20 entry-container">
+				<div class="entry-name"> Attack Type </div>
+				<div class="entry-value"> Piercing </div>
+				<hr class="underline"/>
+			</div>		
+		</div>
+		<div class="row">
+			<div class="col-20 entry-container">
+				<div class="entry-name"> Weapon </div>
+				<div class="entry-value"> Rapier </div>
+				<hr class="underline"/>
+			</div>
+			<div class="col-20 entry-container">
+				<div class="entry-name"> Attack Range </div>
+				<div class="entry-value"> 5ft </div>
+				<hr class="underline"/>
+			</div>
+			<div class="col-20 entry-container">
+				<div class="entry-name"> Hit Bonus </div>
+				<div class="entry-value"> +5 </div>
+				<hr class="underline"/>
+			</div>
+			<div class="col-20 entry-container">
+				<div class="entry-name"> Attack Bonus </div>
+				<div class="entry-value"> +3 </div>
+				<hr class="underline"/>
+			</div>
+			<div class="col-20 entry-container">
+				<div class="entry-name"> Attack Type </div>
+				<div class="entry-value"> Piercing </div>
+				<hr class="underline"/>
+			</div>		
 		</div>	
-		<div class="col-20 entry-container">
-			<div class="entry-name"> Total Hit Dice </div>
-			<div class="entry-value"> 2d6 </div>
-			<hr class="underline"/>
-		</div>
-		<div class="col-20 entry-container">
-			<div class="entry-name"> Usable Hit Dice </div>
-			<div class="entry-value"> 1d6 </div>
-			<hr class="underline"/>
-		</div>
 	</div>
-	<div class="row">
-		<div class="col-33 entry-container">
-			<div class="entry-name"> Spell Defence Check </div>
-			<div class="entry-value"> 14 </div>
-			<hr class="underline"/>
-		</div>
-		<div class="col-33 entry-container">
-			<div class="entry-name"> Spell Attack Bonus </div>
-			<div class="entry-value"> +4 </div>
-			<hr class="underline"/>
-		</div>
-		<div class="col-33 entry-container">
-			<div class="entry-name"> Spell Primary Attribute </div>
-			<div class="entry-value"> Intelligence </div>
-			<hr class="underline"/>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-20 entry-container">
-			<div class="entry-name"> Weapon </div>
-			<div class="entry-value"> Shortbow </div>
-			<hr class="underline"/>
-		</div>
-		<div class="col-20 entry-container">
-			<div class="entry-name"> Attack Range </div>
-			<div class="entry-value"> Up to 120ft/Up 360ft Disadvantage </div>
-			<hr class="underline"/>
-		</div>
-		<div class="col-20 entry-container">
-			<div class="entry-name"> Hit Bonus </div>
-			<div class="entry-value"> +5 </div>
-			<hr class="underline"/>
-		</div>
-		<div class="col-20 entry-container">
-			<div class="entry-name"> Attack Bonus </div>
-			<div class="entry-value"> +3 </div>
-			<hr class="underline"/>
-		</div>
-		<div class="col-20 entry-container">
-			<div class="entry-name"> Attack Type </div>
-			<div class="entry-value"> Piercing </div>
-			<hr class="underline"/>
-		</div>		
-	</div>
-	<div class="row">
-		<div class="col-20 entry-container">
-			<div class="entry-name"> Weapon </div>
-			<div class="entry-value"> Rapier </div>
-			<hr class="underline"/>
-		</div>
-		<div class="col-20 entry-container">
-			<div class="entry-name"> Attack Range </div>
-			<div class="entry-value"> 5ft </div>
-			<hr class="underline"/>
-		</div>
-		<div class="col-20 entry-container">
-			<div class="entry-name"> Hit Bonus </div>
-			<div class="entry-value"> +5 </div>
-			<hr class="underline"/>
-		</div>
-		<div class="col-20 entry-container">
-			<div class="entry-name"> Attack Bonus </div>
-			<div class="entry-value"> +3 </div>
-			<hr class="underline"/>
-		</div>
-		<div class="col-20 entry-container">
-			<div class="entry-name"> Attack Type </div>
-			<div class="entry-value"> Piercing </div>
-			<hr class="underline"/>
-		</div>		
-	</div>	
 </div>
+
+
 
 
 

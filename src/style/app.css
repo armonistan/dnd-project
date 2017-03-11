@@ -4,6 +4,10 @@
   background: #262626;
   display: flex; }
 
+.content-container {
+  width: 100%;
+  height: calc(100% - 4em); }
+
 .row {
   width: 100%; }
 
