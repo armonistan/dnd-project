@@ -1,19 +1,17 @@
-<table class="navigation-header row">
-	<tr>
-		<th>
-			<a [routerLink]="['/maps']"> Maps </a>
-		</th>
-		<th>
-			<a [routerLink]="['/characters']"> Characters </a>
-		</th>
-		<th>
-			<a [routerLink]="['/notes']"> Notes </a>
-		</th>
-		<th>
-			<a [routerLink]="['/inventory']"> Inventory </a>
-		</th>
-	</tr>
-</table>
+<div class="navigation-header row">
+	<div class="col-25">
+		<a [routerLink]="['/maps']"> Maps </a>
+	</div>
+	<div class="col-25">
+		<a [routerLink]="['/characters']"> Characters </a>
+	</div>
+	<div class="col-25">
+		<a [routerLink]="['/notes']"> Notes </a>
+	</div>
+	<div class="col-25">
+		<a [routerLink]="['/inventory']"> Inventory </a>
+	</div>
+</div>
 
 <div class="row">
 	<div>
@@ -32,7 +30,7 @@
 		</div>
 		<div class="col-25 entry-container">
 			<div class="entry-name"> Class </div>
-			<div class="entry-value"> Rogue </div>
+			<div class="entry-value">Level 2 Rogue </div> <!--Combine Class/Archetype with Level-->
 			<hr class="underline"/>
 		</div>
 		<div class="col-25 entry-container">
@@ -43,20 +41,20 @@
 	</div>
 </div>
 
-<table class="col-50 left-container">
-	<table class="col-50 left-container">
-		<tr *ngFor="let stat of stats">
-			<td>
+<div class="col-50 left-container">
+	<div class="col-50 left-container">
+		<div class="stat-container" *ngFor="let stat of stats">
+			<div>
 				{{stat.description}}
-			</td>
-			<td>
+			</div>
+			<div>
 				{{stat.value}}
-			</td>
-			<td>
+			</div>
+			<div>
 				{{stat.modifier}}
-			</td>
-		</tr>
-	</table>
+			</div>
+		</div>
+	</div>
 	
 	<div class="col-50 right-container">
 		<div> Proficiency Bonus </div>
@@ -71,89 +69,108 @@
 			{{skill.description}}
 		</div>
 	</div>
-</table>
+</div>
 
-<table class="col-50 right-container">
-	<table>
-		<div> Character Level </div>
-		<div> 2 </div>
-		
-		<div> Total Hit Dice </div>
-		<div> 2d6 </div>
-		
-		<div> Usable Hit Dice </div>
-		<div> 2d6 </div>
-		
-		<div> HP </div>
-		<div> 9/11 </div>
-		
-		<div> Armor Class </div>
-		<div> 14 </div>
-		
-		<div> Initiative </div>
-		<div> 12 </div>
-	</table>
-	<table>
-		<tr>
-			<td> 
-				Spell Defence Check
-			</td>
-			<td>
-				Spell Attack Bonus
-			</td>
-			<td>
-				Spell Primary Attribute
-			</td>
-		</tr>
-		<tr>
-			<td> 
-				14
-			</td>
-			<td>
-				+4
-			</td>
-			<td>
-				Intelligence
-			</td>
-		</tr>
-	</table>	
-	<table>
-		<tr>
-			<td>
-				Weapon
-			</td>
-			<td>
-				Attack Range
-			</td>		
-			<td> 
-				Hit Bonus
-			</td>
-			<td>
-				Attack Bonus
-			</td>
-			<td>
-				Attack Type
-			</td>
-		</tr>
-		<tr>
-			<td>
-				Shortbow
-			</td>
-			<td>
-				Up to 120ft/Up 360ft Disadvantage
-			</td>		
-			<td> 
-				+5
-			</td>
-			<td>
-				+3
-			</td>
-			<td>
-				Piercing
-			</td>
-		</tr>
-	</table>	
-</table>
+<div class="col-50 right-container">
+	<div class="row">
+		<div class="col-20 entry-container">
+			<div class="entry-name"> HP </div>
+			<div class="entry-value"> 16/16 </div>
+			<hr class="underline"/>
+		</div>
+		<div class="col-20 entry-container">
+			<div class="entry-name"> Armor Class </div>
+			<div class="entry-value"> 14 </div>
+			<hr class="underline"/>
+		</div>
+		<div class="col-20 entry-container">
+			<div class="entry-name"> Initiative </div>
+			<div class="entry-value"> 12 </div>
+			<hr class="underline"/>
+		</div>	
+		<div class="col-20 entry-container">
+			<div class="entry-name"> Total Hit Dice </div>
+			<div class="entry-value"> 2d6 </div>
+			<hr class="underline"/>
+		</div>
+		<div class="col-20 entry-container">
+			<div class="entry-name"> Usable Hit Dice </div>
+			<div class="entry-value"> 1d6 </div>
+			<hr class="underline"/>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-33 entry-container">
+			<div class="entry-name"> Spell Defence Check </div>
+			<div class="entry-value"> 14 </div>
+			<hr class="underline"/>
+		</div>
+		<div class="col-33 entry-container">
+			<div class="entry-name"> Spell Attack Bonus </div>
+			<div class="entry-value"> +4 </div>
+			<hr class="underline"/>
+		</div>
+		<div class="col-33 entry-container">
+			<div class="entry-name"> Spell Primary Attribute </div>
+			<div class="entry-value"> Intelligence </div>
+			<hr class="underline"/>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-20 entry-container">
+			<div class="entry-name"> Weapon </div>
+			<div class="entry-value"> Shortbow </div>
+			<hr class="underline"/>
+		</div>
+		<div class="col-20 entry-container">
+			<div class="entry-name"> Attack Range </div>
+			<div class="entry-value"> Up to 120ft/Up 360ft Disadvantage </div>
+			<hr class="underline"/>
+		</div>
+		<div class="col-20 entry-container">
+			<div class="entry-name"> Hit Bonus </div>
+			<div class="entry-value"> +5 </div>
+			<hr class="underline"/>
+		</div>
+		<div class="col-20 entry-container">
+			<div class="entry-name"> Attack Bonus </div>
+			<div class="entry-value"> +3 </div>
+			<hr class="underline"/>
+		</div>
+		<div class="col-20 entry-container">
+			<div class="entry-name"> Attack Type </div>
+			<div class="entry-value"> Piercing </div>
+			<hr class="underline"/>
+		</div>		
+	</div>
+	<div class="row">
+		<div class="col-20 entry-container">
+			<div class="entry-name"> Weapon </div>
+			<div class="entry-value"> Rapier </div>
+			<hr class="underline"/>
+		</div>
+		<div class="col-20 entry-container">
+			<div class="entry-name"> Attack Range </div>
+			<div class="entry-value"> 5ft </div>
+			<hr class="underline"/>
+		</div>
+		<div class="col-20 entry-container">
+			<div class="entry-name"> Hit Bonus </div>
+			<div class="entry-value"> +5 </div>
+			<hr class="underline"/>
+		</div>
+		<div class="col-20 entry-container">
+			<div class="entry-name"> Attack Bonus </div>
+			<div class="entry-value"> +3 </div>
+			<hr class="underline"/>
+		</div>
+		<div class="col-20 entry-container">
+			<div class="entry-name"> Attack Type </div>
+			<div class="entry-value"> Piercing </div>
+			<hr class="underline"/>
+		</div>		
+	</div>	
+</div>
 
 
 

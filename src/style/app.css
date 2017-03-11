@@ -1,15 +1,26 @@
 .navigation-header {
   height: 4em;
   color: #fff !important;
-  background: #262626; }
+  background: #262626;
+  display: flex; }
 
 .row {
   width: 100%; }
 
+.col-20 {
+  display: inline-block;
+  width: 20%; }
+
 .col-25 {
+  display: inline-block;
   width: 25%; }
 
+.col-33 {
+  display: inline-block;
+  width: 33%; }
+
 .col-50 {
+  display: inline-block;
   width: 50%; }
 
 .profile-portrait {
@@ -35,6 +46,9 @@
 
 .skill-container {
   top: 6em; }
+
+.stat-container {
+  height: 4em; }
 
 .entry-container {
   padding: 1.5em 1em 1em 1em; }
