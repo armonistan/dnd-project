@@ -60,11 +60,17 @@
 .left-container {
 	position: absolute;
 	left: 0%;
+	height: calc(100% - 10em);
 }
 
 .right-container {
 	position: absolute;
 	right: 0%;
+	height: calc(100% - 10em);
+	.right-subcontainer {
+		height: 33%;
+		overflow-y: scroll;
+	}
 }
 
 .skill-container {

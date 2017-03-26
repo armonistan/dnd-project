@@ -113,4 +113,24 @@ export class StaticDataService {
 		
 		return skills;
 	}
+	
+	getCharacterWeapons(){
+		var weapons = [
+			{
+				description: "Shortbow",
+				range: "120ft/360ft*",
+				hitBonus: "+5",
+				attackBonus: "+3",
+				attackType: "Piercing"
+			},{
+				description: "Rapier",
+				range: "5ft",
+				hitBonus: "+5",
+				attackBonus: "+3",
+				attackType: "Piercing"
+			}
+		];
+		
+		return weapons;
+	}
 }

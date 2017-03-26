@@ -120,60 +120,35 @@
 				<hr class="underline"/>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-20 entry-container">
-				<div class="entry-name"> Weapon </div>
-				<div class="entry-value"> Shortbow </div>
-				<hr class="underline"/>
+		<div class="row right-subcontainer">
+			<div *ngFor="let weapon of weapons">
+				<div class="col-20 entry-container">
+					<div class="entry-name">Weapon</div>
+					<div class="entry-value">{{weapon.description}}</div>
+					<hr class="underline"/>
+				</div>
+				<div class="col-20 entry-container">
+					<div class="entry-name"> Attack Range </div>
+					<div class="entry-value">{{weapon.attackRange}}</div>
+					<hr class="underline"/>
+				</div>
+				<div class="col-20 entry-container">
+					<div class="entry-name">Hit Bonus</div>
+					<div class="entry-value">{{weapon.hitBonus}}</div>
+					<hr class="underline"/>
+				</div>
+				<div class="col-20 entry-container">
+					<div class="entry-name">Attack Bonus</div>
+					<div class="entry-value">{{weapon.attackBonus}}</div>
+					<hr class="underline"/>
+				</div>
+				<div class="col-20 entry-container">
+					<div class="entry-name">Attack Type</div>
+					<div class="entry-value">{{weapon.attackType}}</div>
+					<hr class="underline"/>
+				</div>	
 			</div>
-			<div class="col-20 entry-container">
-				<div class="entry-name"> Attack Range </div>
-				<div class="entry-value"> Up to 120ft/Up 360ft Disadvantage </div>
-				<hr class="underline"/>
-			</div>
-			<div class="col-20 entry-container">
-				<div class="entry-name"> Hit Bonus </div>
-				<div class="entry-value"> +5 </div>
-				<hr class="underline"/>
-			</div>
-			<div class="col-20 entry-container">
-				<div class="entry-name"> Attack Bonus </div>
-				<div class="entry-value"> +3 </div>
-				<hr class="underline"/>
-			</div>
-			<div class="col-20 entry-container">
-				<div class="entry-name"> Attack Type </div>
-				<div class="entry-value"> Piercing </div>
-				<hr class="underline"/>
-			</div>		
 		</div>
-		<div class="row">
-			<div class="col-20 entry-container">
-				<div class="entry-name"> Weapon </div>
-				<div class="entry-value"> Rapier </div>
-				<hr class="underline"/>
-			</div>
-			<div class="col-20 entry-container">
-				<div class="entry-name"> Attack Range </div>
-				<div class="entry-value"> 5ft </div>
-				<hr class="underline"/>
-			</div>
-			<div class="col-20 entry-container">
-				<div class="entry-name"> Hit Bonus </div>
-				<div class="entry-value"> +5 </div>
-				<hr class="underline"/>
-			</div>
-			<div class="col-20 entry-container">
-				<div class="entry-name"> Attack Bonus </div>
-				<div class="entry-value"> +3 </div>
-				<hr class="underline"/>
-			</div>
-			<div class="col-20 entry-container">
-				<div class="entry-name"> Attack Type </div>
-				<div class="entry-value"> Piercing </div>
-				<hr class="underline"/>
-			</div>		
-		</div>	
 	</div>
 </div>
 

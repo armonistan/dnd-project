@@ -12,10 +12,12 @@ export class HomeComponent {
 
 	stats: Array<Object> = [];
 	skills: Array<Object> = [];
+	weapons: Array<Object> = [];
 	
 	constructor(private route: ActivatedRoute, private router: Router,) {
 		let staticDataService = new StaticDataService();
 		this.stats = staticDataService.getCharacterStats();
 		this.skills = staticDataService.getCharacterSkills();
+		this.weapons = staticDataService.getCharacterWeapons();
 	}
 }
