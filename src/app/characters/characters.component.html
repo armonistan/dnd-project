@@ -1,16 +1,30 @@
-<table class="row">
-	<tr>
-		<th>
-			<a [routerLink]="['/maps']"> Maps </a>
-		</th>
-		<th>
-			<a [routerLink]="['/home']"> Home </a>
-		</th>
-		<th>
-			<a [routerLink]="['/notes']"> Notes </a>
-		</th>
-		<th>
-			<a [routerLink]="['/inventory']"> Inventory </a>
-		</th>
-	</tr>
-</table>
+<div class="navigation-header row">
+	<span class="col-25 navigation-option" (click)="goToState('/maps')">Maps</span>
+	<span class="col-25 navigation-option" (click)="goToState('/home')">Home</span>
+	<span class="col-25 navigation-option" (click)="goToState('/notes')">Notes</span>
+	<span class="col-25 navigation-option" (click)="goToState('/inventory')">Inventory</span>
+</div>
+
+<div class="content-container">
+	<div class="col-50 character-card-container">
+		<div class="character-card" *ngFor="let character of characters">
+			<div>{{character.name}}</div>
+			<div>{{character.description}}</div>
+			<div> Picture </div>
+			<button>Notes</button>
+			<button>Whisper</button>
+		</div>
+	</div>
+	
+	<div class="col-50 right-container">
+		<div> Picture </div>
+		<div> Name </div>
+		<div> Description </div>
+		<div> Notes Title </div>
+		<div> (Notes) </div>
+		<div> Whispers Title </div>
+		<div> (Whispers) </div>
+		<button>Notes</button>
+		<button>Whisper</button>
+	</div>
+</div>

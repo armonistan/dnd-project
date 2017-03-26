@@ -7,6 +7,12 @@
 	color: #fff !important;
 	background: #262626;
 	display: flex;
+	
+	.navigation-option {
+		padding-top: 1.5em;
+		padding-bottom: 1.5em;
+		text-align: center;
+	}
 }
 
 .content-container {
@@ -93,4 +99,24 @@
 	.entry-value {
 		font-size: 1em;
 	}
+}
+
+/////////////////////
+//character styling//
+/////////////////////
+
+.character-card-container{
+	position: absolute;
+	left: 0%;
+	height: calc(100% - 10em);
+	overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.character-card {
+	height: 10em;
+	width: 100%;
+	border: black;
+    border-width: thin;
+    border-style: solid;
 }

@@ -133,4 +133,23 @@ export class StaticDataService {
 		
 		return weapons;
 	}
+	
+	///////
+	
+	getCharacters(){
+		var characters = [
+			{
+				name: "Himo",
+				description: "Level 3 Monk (PC)",
+			},{
+				name: "Smip",
+				description: "Level 3 Bard (PC)"
+			},{
+				name: "Lord Snoke",
+				description: "Darth Binks' Apprentice"
+			}
+		]
+		
+		return characters;
+	}
 }

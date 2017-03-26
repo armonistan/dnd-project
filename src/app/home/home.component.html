@@ -1,16 +1,8 @@
 <div class="navigation-header row">
-	<div class="col-25">
-		<a [routerLink]="['/maps']"> Maps </a>
-	</div>
-	<div class="col-25">
-		<a [routerLink]="['/characters']"> Characters </a>
-	</div>
-	<div class="col-25">
-		<a [routerLink]="['/notes']"> Notes </a>
-	</div>
-	<div class="col-25">
-		<a [routerLink]="['/inventory']"> Inventory </a>
-	</div>
+	<span class="col-25 navigation-option" (click)="goToState('/maps')">Maps</span>
+	<span class="col-25 navigation-option" (click)="goToState('/characters')">Characters</span>
+	<span class="col-25 navigation-option" (click)="goToState('/notes')">Notes</span>
+	<span class="col-25 navigation-option" (click)="goToState('/inventory')">Inventory</span>
 </div>
 
 <div class="content-container">

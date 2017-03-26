@@ -20,4 +20,8 @@ export class HomeComponent {
 		this.skills = staticDataService.getCharacterSkills();
 		this.weapons = staticDataService.getCharacterWeapons();
 	}
+	
+	goToState(state){
+		this.router.navigate([state]);
+	}
 }

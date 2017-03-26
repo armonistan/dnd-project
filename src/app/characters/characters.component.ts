@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
+import {StaticDataService} from '../services/static-data.service';
 
 @Component({
 	selector: 'characters',
@@ -8,15 +9,15 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 })
 
 export class CharactersComponent {
-	message: string = "Hello World!";
-	userLoginValue: string = "";
-	//configMessage: string = Config.LLAMA;
+	
+	characters: Array<Object> = [];
 	
 	constructor(private route: ActivatedRoute, private router: Router) {
+		let staticDataService = new StaticDataService();
+		this.characters = staticDataService.getCharacters();
 	}
 	
-	login(){
-		console.log(this.userLoginValue);
-		this.router.navigate(["/about"]);
+	goToState(state){
+		this.router.navigate([state]);
 	}
 }
