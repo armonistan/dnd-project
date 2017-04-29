@@ -1,0 +1,56 @@
+/////////////////////
+//home styling///////
+/////////////////////
+
+.profile-portrait {
+	margin-top: .5em;
+	width: 5em;
+	height: 5em;
+	border-radius: 3em;
+	position: absolute;
+}
+
+.top-container {
+	width: calc(100% - 6em);
+	display: flex;
+	margin-left: 6em;
+	height: 6em;
+}
+
+.left-container {
+	position: absolute;
+	left: 0%;
+	height: calc(100% - 10em);
+}
+
+.right-container {
+	position: absolute;
+	right: 0%;
+	height: calc(100% - 10em);
+	.right-subcontainer {
+		height: 33%;
+		overflow-y: scroll;
+	}
+}
+
+.skill-container {
+	top: 6em;
+}
+
+.stat-container {
+	height: 4em;
+}
+
+.entry-container {
+	padding: 1.5em 1em 1em 1em;
+	
+	.underline {
+		margin-top: 0em !important;
+	}
+	.entry-name {
+		font-size: .825em;
+	}
+	.entry-value {
+		font-size: 1em;
+	}
+}

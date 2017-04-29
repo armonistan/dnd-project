@@ -1,3 +1,7 @@
+@import 'variables';
+@import 'home';
+@import 'characters';
+
 /////////////////////
 //app wide styling///
 /////////////////////
@@ -15,6 +19,17 @@
 	}
 }
 
+.card {
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	margin: 0.5em;
+	width: calc(100% - 1em)!important;
+	.card-content {
+		width: calc(100% - 2em);
+		height: calc(100% - 1em);
+		padding: 1em;
+	}
+}
+
 .content-container {
 	width:100%;
 	height: calc(100% - 4em);
@@ -22,6 +37,7 @@
 
 .row {
 	width: 100%;
+	display: flex;
 }
 
 .col-20 {
@@ -44,79 +60,24 @@
 	width: 50%;
 }
 
-/////////////////////
-//home styling///////
-/////////////////////
-
-.profile-portrait {
-	margin-top: .5em;
-	width: 5em;
-	height: 5em;
-	border-radius: 3em;
-	position: absolute;
+.col-80 {
+	display: inline-block;
+	width: 80%;
 }
 
-.top-container {
-	width: calc(100% - 6em);
-	display: flex;
-	margin-left: 6em;
-	height: 6em;
+.button {
+	display: inline-block;
+	position: relative;
+	width: 120px;
+	height: 32px;
+	line-height: 32px;
+	border-radius: 2px;
+	font-size: 0.9em;
+	background-color: #fff;
+	color: #646464;
 }
+    
 
-.left-container {
-	position: absolute;
-	left: 0%;
-	height: calc(100% - 10em);
-}
 
-.right-container {
-	position: absolute;
-	right: 0%;
-	height: calc(100% - 10em);
-	.right-subcontainer {
-		height: 33%;
-		overflow-y: scroll;
-	}
-}
 
-.skill-container {
-	top: 6em;
-}
 
-.stat-container {
-	height: 4em;
-}
-
-.entry-container {
-	padding: 1.5em 1em 1em 1em;
-	
-	.underline {
-		margin-top: 0em !important;
-	}
-	.entry-name {
-		font-size: .825em;
-	}
-	.entry-value {
-		font-size: 1em;
-	}
-}
-
-/////////////////////
-//character styling//
-/////////////////////
-
-.character-card-container{
-	position: absolute;
-	left: 0%;
-	height: calc(100% - 10em);
-	overflow-y: auto;
-    overflow-x: hidden;
-}
-
-.character-card {
-	height: 10em;
-	width: 100%;
-	border: black;
-    border-width: thin;
-    border-style: solid;
-}

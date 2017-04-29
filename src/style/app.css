@@ -1,36 +1,3 @@
-.navigation-header {
-  height: 4em;
-  color: #fff !important;
-  background: #262626;
-  display: flex; }
-  .navigation-header .navigation-option {
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
-    text-align: center; }
-
-.content-container {
-  width: 100%;
-  height: calc(100% - 4em); }
-
-.row {
-  width: 100%; }
-
-.col-20 {
-  display: inline-block;
-  width: 20%; }
-
-.col-25 {
-  display: inline-block;
-  width: 25%; }
-
-.col-33 {
-  display: inline-block;
-  width: 33%; }
-
-.col-50 {
-  display: inline-block;
-  width: 50%; }
-
 .profile-portrait {
   margin-top: .5em;
   width: 5em;
@@ -72,18 +39,86 @@
   .entry-container .entry-value {
     font-size: 1em; }
 
-.character-card-container {
+.character-card-list-container {
   position: absolute;
   left: 0%;
   height: calc(100% - 10em);
   overflow-y: auto;
   overflow-x: hidden; }
 
-.character-card {
-  height: 10em;
+.list-character-card .primary-text {
+  font-size: 1.5em; }
+.list-character-card .secondary-text {
+  font-size: .875em; }
+.list-character-card .character-portrait {
+  height: 4em; }
+
+.selected-character-card .primary-text {
+  font-size: 1.5em; }
+.selected-character-card .secondary-text {
+  font-size: .875em; }
+.selected-character-card .character-portrait {
+  height: 4em; }
+.selected-character-card textarea {
+  display: block;
+  width: 100%; }
+
+.navigation-header {
+  height: 4em;
+  color: #fff !important;
+  background: #262626;
+  display: flex; }
+  .navigation-header .navigation-option {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    text-align: center; }
+
+.card, .list-character-card, .selected-character-card {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  margin: 0.5em;
+  width: calc(100% - 1em) !important; }
+  .card .card-content, .list-character-card .card-content, .selected-character-card .card-content {
+    width: calc(100% - 2em);
+    height: calc(100% - 1em);
+    padding: 1em; }
+
+.content-container {
   width: 100%;
-  border: black;
-  border-width: thin;
-  border-style: solid; }
+  height: calc(100% - 4em); }
+
+.row {
+  width: 100%;
+  display: flex; }
+
+.col-20 {
+  display: inline-block;
+  width: 20%; }
+
+.col-25 {
+  display: inline-block;
+  width: 25%; }
+
+.col-33 {
+  display: inline-block;
+  width: 33%; }
+
+.col-50 {
+  display: inline-block;
+  width: 50%; }
+
+.col-80 {
+  display: inline-block;
+  width: 80%; }
+
+.button {
+  display: inline-block;
+  position: relative;
+  width: 120px;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 2px;
+  font-size: 0.9em;
+  background-color: #fff;
+  color: #646464; }
 
 /*# sourceMappingURL=app.css.map */

@@ -11,10 +11,14 @@ import {StaticDataService} from '../services/static-data.service';
 export class CharactersComponent {
 	
 	characters: Array<Object> = [];
+	notes: string = "";
+	whispers: string="";
 	
 	constructor(private route: ActivatedRoute, private router: Router) {
 		let staticDataService = new StaticDataService();
 		this.characters = staticDataService.getCharacters();
+		this.notes = "Hello World";
+		this.whispers = "Llama Prime greets you";
 	}
 	
 	goToState(state){

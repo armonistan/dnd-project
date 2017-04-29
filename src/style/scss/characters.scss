@@ -1,0 +1,41 @@
+/////////////////////
+//character styling//
+/////////////////////
+
+.character-card-list-container{
+	position: absolute;
+	left: 0%;
+	height: calc(100% - 10em);
+	overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.list-character-card {
+	@extend .card;
+	.primary-text {
+		font-size: 1.5em;
+	}
+	.secondary-text {
+		font-size: .875em;
+	}
+	.character-portrait {
+		height: 4em;
+	}
+}
+
+.selected-character-card {
+	@extend .card;
+	.primary-text {
+		font-size: 1.5em;
+	}
+	.secondary-text {
+		font-size: .875em;
+	}
+	.character-portrait {
+		height: 4em;
+	}
+	textarea {
+		display: block;
+		width: 100%;
+	}
+}
