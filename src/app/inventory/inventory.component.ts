@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
+import {StaticDataService} from '../services/static-data.service';
 
 @Component({
 	selector: 'inventory',
@@ -8,15 +9,16 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 })
 
 export class InventoryComponent {
-	message: string = "Hello World!";
-	userLoginValue: string = "";
-	//configMessage: string = Config.LLAMA;
+	inventory: Array<Object> = [];
+	spells: Array<Object> = [];
 	
 	constructor(private route: ActivatedRoute, private router: Router) {
+		let staticDataService = new StaticDataService();
+		this.inventory = staticDataService.getInventory();
+		this.spells = staticDataService.getSpells();
 	}
 	
-	login(){
-		console.log(this.userLoginValue);
-		this.router.navigate(["/about"]);
+	goToState(state){
+		this.router.navigate([state]);
 	}
 }

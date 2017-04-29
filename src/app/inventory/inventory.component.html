@@ -1,16 +1,57 @@
-<table class="row">
-	<tr>
-		<th>
-			<a [routerLink]="['/maps']"> Maps </a>
-		</th>
-		<th>
-			<a [routerLink]="['/characters']"> Characters </a>
-		</th>
-		<th>
-			<a [routerLink]="['/notes']"> Notes </a>
-		</th>
-		<th>
-			<a [routerLink]="['/home']"> Home </a>
-		</th>
-	</tr>
-</table>
+<div class="navigation-header row">
+	<span class="col-25 navigation-option" (click)="goToState('/maps')">Maps</span>
+	<span class="col-25 navigation-option" (click)="goToState('/characters')">Characters</span>
+	<span class="col-25 navigation-option" (click)="goToState('/notes')">Notes</span>
+	<span class="col-25 navigation-option" (click)="goToState('/home')">Home</span>
+</div>
+
+<div class="row">
+	<div class="col-50">
+		<div class="list-inventory-card">
+			<div class="card-content">
+				<div class="row">
+					<div class="col-80">
+						<div class="primary-text">Your Items</div>
+						<div class="secondary-text">{{inventory.length}} Items</div>
+					</div>
+					<div class="col-20">
+						<button class="button">Add Item</button>
+					</div>
+				</div>
+				<div *ngFor="let item of inventory">
+					<div>{{item.description}}</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-50">
+		<div class="selected-inventory-card">
+			<div class="primary-text">Item Description</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-50">
+		<div class="list-inventory-card">
+			<div class="card-content">
+				<div class="row">
+					<div class="col-80">
+						<div class="primary-text">Your Spells</div>
+						<div class="secondary-text">{{spells.length}} Spells</div>
+					</div>
+					<div class="col-20">
+						<button class="button">Add Spell</button>
+					</div>
+				</div>
+				<div *ngFor="let spell of spells">
+					<div>{{spell.description}}</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-50">
+		<div class="selected-inventory-card">
+			<div class="primary-text">Spell Description</div>
+		</div>
+	</div>
+</div>

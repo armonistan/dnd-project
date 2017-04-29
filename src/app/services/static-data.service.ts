@@ -1,7 +1,7 @@
 export class StaticDataService {
 	constructor (){
 	}
-
+	////home
 	getCharacterStats(){
 		var stats = [
 			{
@@ -134,7 +134,7 @@ export class StaticDataService {
 		return weapons;
 	}
 	
-	///////
+	///////Characters
 	
 	getCharacters(){
 		var characters = [
@@ -151,5 +151,33 @@ export class StaticDataService {
 		]
 		
 		return characters;
+	}
+	
+	//////Inventory
+	
+	getInventory(){
+		var inventory = [
+			{
+				description: "Shit"
+			},{
+				description: "I"
+			},{
+				description: "Don't"
+			},{
+				description: "Know"
+			}
+		]
+		
+		return inventory;
+	}
+	
+	getSpells(){
+		var spells = [
+			{
+				description: "Dancing Lights"
+			}
+		]
+		
+		return spells;
 	}
 }

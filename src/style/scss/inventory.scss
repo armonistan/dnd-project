@@ -1,0 +1,20 @@
+/////////////////////
+//inventory styling//
+/////////////////////
+
+.list-inventory-card {
+	@extend .card;
+	.primary-text {
+		font-size: 1.5em;
+	}
+	.secondary-text {
+		font-size: .875em;
+	}
+}
+
+.selected-inventory-card {
+	@extend .card;
+	.primary-text {
+		font-size: 1.5em;
+	}
+}

@@ -63,6 +63,14 @@
   display: block;
   width: 100%; }
 
+.list-inventory-card .primary-text {
+  font-size: 1.5em; }
+.list-inventory-card .secondary-text {
+  font-size: .875em; }
+
+.selected-inventory-card .primary-text {
+  font-size: 1.5em; }
+
 .navigation-header {
   height: 4em;
   color: #fff !important;
@@ -73,11 +81,11 @@
     padding-bottom: 1.5em;
     text-align: center; }
 
-.card, .list-character-card, .selected-character-card {
+.card, .list-character-card, .selected-character-card, .list-inventory-card, .selected-inventory-card {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   margin: 0.5em;
   width: calc(100% - 1em) !important; }
-  .card .card-content, .list-character-card .card-content, .selected-character-card .card-content {
+  .card .card-content, .list-character-card .card-content, .selected-character-card .card-content, .list-inventory-card .card-content, .selected-inventory-card .card-content {
     width: calc(100% - 2em);
     height: calc(100% - 1em);
     padding: 1em; }
